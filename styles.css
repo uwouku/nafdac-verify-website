@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#navbar {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+}
+
+#navbar .container {
+  display: flex;
+  border-bottom: 0.8px solid #aaa7a7;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container img {
+  width: 200px;
+  height: 35px;
+}
+
+.logo-container p {
+  display: inline;
+  margin-left: 20px;
+  color: grey;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.list-items {
+  list-style: none;
+  display: flex;
+}
+
+.list-item a {
+  text-decoration: none;
+  color: grey;
+  margin-left: 14px;
+}
+
+.list-item a:hover {
+  text-decoration: underline;
+}
+
+.list-item.cta a {
+  border: 1px solid grey;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.list-item.cta a:hover {
+  text-decoration: none;
+  border-color: black;
+}
+
+#intro-section {
+  display: flex;
+  /* Arranges the elements on their main axis */
+  justify-content: center;
+  /* Arranges the elements on their cross axis */
+  align-items: center;
+  padding: 50px 0 20px 0;
+}
+
+#intro-section img {
+  width: 90px;
+  height: 90px;
+}
+
+#intro-section .intro-text-container {
+  margin-left: 150px;
+}
+
+#intro-section h1 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#intro-section p {
+  font-style: italic;
+  color: grey;
+  text-align: center;
+}
+
+#main-section {
+  background-color: #0c884a;
+  padding: 30px;
+}
+
+#main-section .container {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 16px;
+}
+
+.download-link:hover {
+  background-color: #0a6d3b;
+  border-radius: 4px;
+}
+
+.download-link img {
+  width: 70px;
+  height: 70px;
+}
+
+.download-link div {
+  margin-left: 20px;
+}
+
+.download-link span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.download-link .version-text {
+  color: #333333;
+}
+
+.download-link .platform-name {
+  color: white;
+}
+
+.download-link p {
+  color: white;
+}
+
+#number-verification-form {
+  background-color: #0a6d3b;
+  height: 200px;
+  padding: 18px 60px;
+  margin-left: 100px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#number-verification-form .input-label {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+#number-verification-form input {
+  padding: 10px 10px;
+  width: 320px;
+  border: none;
+  outline: none;
+  margin: 18px 0;
+}
+
+#number-verification-form input:focus {
+  outline: 1px solid #71e7f7ea;
+}
+
+#number-verification-form button {
+  padding: 16px 50px;
+  background-color: #fecc5c;
+  border: none;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  color: #422d00;
+  font-weight: bold;
+  width: 250px;
+}
+
+#number-verification-form button:hover {
+  background-color: #fdc448;
+}
+
+/* vh - viewport height, vw - viewport-width */
+#support-section {
+  background-color: #eeecec;
+  height: 250px;
+  padding-top: 35px;
+}
+
+#support-section ul {
+  list-style: none;
+  display: flex;
+  width: 80vw;
+  margin: auto;
+  background: white;
+  padding: 30px;
+}
+
+#support-section ul li {
+  display: flex;
+  width: 45%;
+}
+
+#support-section ul .divider {
+  height: 150px;
+  width: 2px;
+  background-color: #dad8d8;
+  margin: 0 40px;
+}
+
+#support-section ul li img {
+  width: 90px;
+  height: 90px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#support-section ul li div p {
+  color: grey;
+  line-height: 27px;
+}
+
+#support-section .contact-details {
+  display: block;
+}
+
+.contact-details .leading {
+  color: #131212;
+}
+
+.contact-details .trailing {
+  color: #0a6d3b;
+}
+
+#main-footer {
+  background-color: #eeecec;
+  padding: 40px 0 0 0;
+}
+
+#main-footer .links-container {
+  border-top: 1px solid #dad8d8;
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main-footer .cta .copy-right {
+  color: #131212;
+}
+
+#main-footer .links-container .cta a {
+  text-decoration: none;
+  color: grey;
+}
+
+#main-footer .links-container .cta a:hover {
+  text-decoration: underline;
+}
+
+#main-footer .links-container .cta .attribute-text {
+  color: #131212;
+}
+
+#main-footer .links-container .nafdac-accronym {
+  margin-right: 60px;
+}
+
+#main-footer .links-container .cta {
+  display: flex;
+  align-items: center;
+}
+#main-footer .links-container .cta .login-btn {
+  margin-left: 30px;
+}
+
+#main-footer .links-container .cta .login-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#main-footer .social-links img {
+  width: 28px;
+  height: 28px;
+}
